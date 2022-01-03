@@ -2,6 +2,7 @@ import Home from './Home';
 import About from './About';
 import EducationSection from './EducationSection';
 import ExperienceSection from './ExperienceSection';
+import Hobbies from './Hobbies';
 import Contact from './Contact';
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
   const educationList = [
     { 
       id: 1,
-      institution: 'UW',
-      degree: 'CS',
+      institution: 'University of Waterloo',
+      degree: 'Bachelor of Computer Science',
       start: 'Sept 2020',
       end: 'Present',
       bullets: [],
@@ -20,16 +21,11 @@ function App() {
   const experienceList = [
     { 
       id: 1,
-      company: 'placeholder',
-      position: 'placeholder',
-      start: 'xxx',
-      end: 'xxx',
-      bullets: [
-        'a',
-        'b',
-        'c',
-        'd'
-      ],
+      company: 'IT Support Specialist',
+      position: 'Tangam Systems',
+      start: 'Sept 2021',
+      end: 'Dec 2021',
+      bullets: [],
     }
   ];
 
@@ -37,7 +33,7 @@ function App() {
     'Email',
     'LinkedIn',
     'GitHub',
-  ]
+  ];
   
   return (
     <>
@@ -45,6 +41,7 @@ function App() {
       <About />
       <EducationSection educationList={educationList}/>
       <ExperienceSection experienceList={experienceList}/>
+      <Hobbies />
       <Contact contacts={contacts}/>
     </>
   );
